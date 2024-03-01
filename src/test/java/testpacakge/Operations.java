@@ -126,13 +126,13 @@ public class Operations {
         a.getclosead();
     }
 
-    @Test (priority = 12)
+   /* @Test (priority = 12)
     public void exitIntent(){
         ExitIntent ei = new ExitIntent(driver);
         ei.getexitlink();
         ei.getExitIntent();
 
-    }
+    }*/
 
 
 

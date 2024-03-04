@@ -126,13 +126,42 @@ public class Operations {
         a.getclosead();
     }
 
-   /* @Test (priority = 12)
-    public void exitIntent(){
-        ExitIntent ei = new ExitIntent(driver);
-        ei.getexitlink();
-        ei.getExitIntent();
+    @Test
+    public void FormAuthontication() {
+        FormAuthontication f=new FormAuthontication(driver);
+        f.getLink();
+        f.getUsernameandPassword();
+        f.logoutbtn();
+    }
 
-    }*/
+    @Test
+    public void FramesConcepts() {
+        Frames f=new Frames(driver);
+        f.getLink();
+        f.PerformAction();
+    }
+
+    @Test
+    public void HorizontalSlider() {
+        Horizontal_Slider slider=new Horizontal_Slider(driver);
+        slider.getLink();
+        slider.PerformAction();
+    }
+
+    @Test
+    public void Hover() {
+        Hover h=new Hover(driver);
+        h.getLink();
+        h.PerformAction();
+    }
+
+    @Test
+    public void Infinite_Scroll() throws InterruptedException {
+        Infinate_Scoll s=new Infinate_Scoll(driver);
+        s.getLink();
+        Thread.sleep(3000);
+        s.PerformAction();
+    }
 
 
 

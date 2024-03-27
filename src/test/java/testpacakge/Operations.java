@@ -83,7 +83,7 @@ public class Operations {
     @Test(priority = 7)
     public void DynamicControls() throws InterruptedException {
         driver.navigate().to("https://the-internet.herokuapp.com/");
-        DynamicControls dc =new DynamicControls(driver);
+        DynamicControls dc = new DynamicControls(driver);
         dc.getDynamicControls();
         dc.getAddadnRemove();
         Thread.sleep(1000);
@@ -161,6 +161,63 @@ public class Operations {
         s.getLink();
         Thread.sleep(3000);
         s.PerformAction();
+    }
+
+    @Test
+    public void Keypress() throws InterruptedException {
+        KeyPress k = new KeyPress(driver);
+        k.getLink();
+        k.operation();
+    }
+
+    @Test
+    public void LandDDOM() throws InterruptedException {
+        LargeAndDeepDOM l = new LargeAndDeepDOM(driver);
+        l.getLink();
+        l.PerformAction();
+
+    }
+
+    @Test
+    public void multipleWindows(){
+        Multiple_Windows m = new Multiple_Windows(driver);
+        m.getLink();
+        m.PerformAction();
+    }
+
+    @Test
+    public void nestedFrames(){
+        NestedFrames n = new NestedFrames(driver);
+        n.getLink();
+        n.PerformAction();
+    }
+
+    @Test
+    public void notificationMessage(){
+        NotificationMessages nm = new NotificationMessages(driver);
+        nm.getLink();
+        nm.PerformAction();
+    }
+
+    @Test
+    public void redirectedLink() throws InterruptedException {
+        RedirectedLink rl = new RedirectedLink(driver);
+        rl.getLink();
+        rl.PerformAction();
+    }
+
+    @Test
+    public void shadowDOM(){
+        Shadow_DOM sd = new Shadow_DOM(driver);
+        sd.getLink();
+        sd.PerformAction();
+    }
+
+    @Test
+    public void sortedData(){
+        SortedDataTable sdt = new SortedDataTable(driver);
+        sdt.getlink();
+        sdt.performAction();
     }
 
 
